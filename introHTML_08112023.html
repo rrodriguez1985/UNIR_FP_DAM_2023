@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción HTML</title>
+</head>
+<body>
+    <!-- En HTML, tenemos la posibilidad de poder "poner" varios tipos de títulos 
+        (encabezados).
+    En el caso de HTML, tenemos un total de 6 niveles o tipos de títulos
+    Estos títulos van desde el h1 (siendo este el de mayor tamaño), 
+    hasta el h6 (menor tamaño)
+    Los títulos tienen etiqueta de apertura y cierre.
+    Ejemplo: etiqueta de apertura <h1> y etiqueta de cierre </h1>
+-->
+Títulos en HTML: Tenemos 6 niveles o tipos. Estos van desde el H1 hasta el H6
+    <h1>Ejemplo de Título en H1</h1>
+    <h2>Ejemplo de Título en H2</h2>
+    <h3>Ejemplo de Titulo en H3</h3>
+    <h4>Ejemplo de Título en H4</h4>
+    <h5>Ejemplo de Título en H5</h5>
+    <h6>Ejemplo de Título en H6</h6>
+    <hr>
+    Saltos de Párrafo (etiqueta p) y Saltos de Línea (etiqueta br)
+    <!-- La etiqueta salto de párrafo (etiqueta de apertura y cierre p), se utiliza
+    para delimitar un párrafo de texto.
+La etiqueta salto de párrafo se representa por las etiqueta <p>Texto cualquiera</p> -->
+    <p>
+        Esto es un ejemplo de salto de párrafo.
+        <br>Tiene la separación del tamaño de la fuente del texto que estemos utilizando
+        <br>en ese mismo momento.
+    </p>
+    <!-- La etiqueta de salto de línea (monoetiqueta br), se utiliza para insertar un salto
+    de línea en nuestro documento HTML. El tamaño de separación entre líneas será
+    el mínimo posible. La etiqueta es representada por <br<
+    El salto de línea también se puede representar de la siguiente manera: <br />-->
+    <br> Esto es un ejemplo de uso de etiqueta br (salto de línea.)
+    <br>La separación entre líneas es a diferencia del salto de párrafo, mínimo.
+    <p>Hola, esto es un ejemplo de salto de párrafo
+        Estoy metiendo un salto de línea.
+    </p>
+    <p>
+        Separador de secciones mediante la etiqueta HR
+    </p>
+    La etiqueta hr, es un elemento del que disponemos en HTML para poder hacer separaciones
+    <br>de secciones o divisiones de texto, con el fin de poder tener todo mucho más
+    <br>organizado
+    Ejemplo de línea hr. Se utiliza la monoetiqueta hr.
+    <br>Si utilizamos los atributos width, size y color, podemos establecer lo que son
+    <br>tamaño de la línea (en %), grosor de la línea (px) y color.
+    <hr width="75%" size="12px" color="red">
+    Etiqueta Preformateado (pre)
+    <p>
+        La etiqueta pre, con apertura y cierre, es un tipo de tag que nos permite
+        <br>insertar texto de manera que se visualice en nuestra página web tal y como
+        <br>la estamos escribiendo. Es decir, de una manera preformateada.
+        <br>La etiqueta code permite insertar código en un documento HTML. 
+        <br>Siempre se suele usar junto con la etiqueta pre.
+    </p>
+    <br>Ejemplo de texto con etiqueta pre  y code
+    <pre>
+        La              función             en              Java        de 
+
+            Hola        Mundo       es....
+            <code>
+                function holaDAM(){
+                    console.log('Hola amigxs de DAM FP UNIR');
+                    alert('Hola caracola');
+                }
+            </code>
+    </pre>
+    <hr>
+    <br>Dar formato a Texto en HTML
+    <br><b>Poner un texto en color negrita</b>
+    <br><i>Poner un texto en cursiva</i> 
+    <br><del>Poner un texto con tachado</del>
+    <br><em>Es para poner énfasis en un texto</em>
+    <br><small>Poner un texto más pequeño...</small>
+    <br>Esto es un ejemplo de superíndice x<sup>2</sup>
+    <br>Esto es un ejemplo de subíndice H<sub>2</sub>O
+    <br><mark>Esto es un texto subrayado</mark>
+    <br>Esto es un ejemplo de <q>cita pequeña</q> de un libro...
+    <hr>
+    <br>Ejemplo de apariencia de fuentes con HTML: etiqueta font
+    <br>Actualmente, para poder dar formato al texto en HTML, se utiliza directamente
+    <br>el lenguaje de estilos CSS.
+    <br>Eso no quita, que podamos usar de manera OCASIONAL, la etiqueta font para dar
+    <br>formato al texto.
+    <br><b>OJO: EN HTML5 ESTÁ DESCATALOGADA</b>
+    <br>Ejemplo de texto con etiqueta font:
+    <p align="center"><font size="32px" face="Impact" color="blue">Esto es un ejemplo en HTML de formato de texto</font></p>
+</body>
+</html>
