@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML5</title>
+</head>
+<body>
+    <h1>Listas en HTML5</h1>
+    En HTML5, podemos distinguir entre tres tipos de listas:
+    <ul>
+        <li><b>Listas Ordenadas:</b> Son listas que se llaman OrderList (ol)</li>
+        <li><b>Listas Desordenadas:</b>Son listas que se llaman UnOrderList (ul)</li>
+        <li><b>Listas de Definición:</b>Son listas que llaman Definition List (dl)</li>
+    </ul>
+    <br>En las listas, podemos insertar cualquier tipo de elemento: texto, imágen, vídeo, etc.
+    <br>Podemos además, anidar listas de distintos tipos entre sí. Es decir, podemos mezclar
+    <br>listas desordenadas con ordenadas, y viceversa. 
+    <br>Que la estructura de Listas Ordenadas / Desordenadas, se utilizan como base para realizar
+    <br>los menús de nuestras páginas web (con CSS las ponemos bonitas)
+    <h2>Lista Ordenada: Ejemplo</h2>
+    <br>La estructura de una lista Ordenada, viene dada por una etiqueta OL de apertura y de cierre.
+    <br>Además, internamente, se utiliza la etiqueta LI de apertura y cierre, para listar los elementos
+    <br>de nuestra lista. Ya sea ordenada o desordenada.
+    <br>Ejemplo de Lista Ordenada
+    <ol>
+        <li>Windows 11</li>
+        <li>Ubuntu</li>
+        <li>Kali Linux</li>
+        <li>Mac OS Yosemite</li>
+    </ol>
+    <br>
+    <h2>Lista Desordenada: Ejemplo</h2>
+    <br>La estructura de una lista desordenada, viene dada por una etiqueta UL de apertura y de cierre.
+    <br>Además, internamente, se utiliza la etiqueta LI de apertura y cierre, para listar los elementos
+    <br>de nuestra lista. Ya sea ordenada o desordenada.
+    <br>Ejemplo de Lista Desordenada
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ul>
+    <hr>
+    <h3>Dar formato a Listas Ordenadas y Desordenadas</h3>
+    Para poder dar formato a las listas ordenadas y desordenadas, podemos utilizar
+    <br>dos atributos que nos permitirán cambiar el inicio del comienzo de la
+    <br>enumeración de las listas ordenadas así como el tipo, 
+    <br>y un atributo que nos permitirá cambiar el icono de nuestra lista desordenada.
+    <br>
+    <h4>Ejemplo de Lista Ordenada</h4>
+    <ol type="a" start="5">
+        <li>Podemos poner letras en Mayúculas</li>
+        <li>Podemos poner letras en minúsculas</li>
+        <li>Podemos poner números romanos en Mayúculas</li>
+        <li>Podemos poner números romanos en minúsculas</li>
+        <li>Por defecto, ponemos números "normales"</li>
+        <li>Podemos indicar el orden en el que queremos comenzar</li>
+    </ol>
+    <h4>Ejemplo de Lista Desordenada</h4>
+    <ul type="circle">
+        <li>Podemos poner discos (viñeta redonda sin relleno) con disc</li>
+        <li>Podemos poner círculos con el atributo circle</li>
+        <li>Podemos poner viñetas cuadradas con el atributo square</li>
+    </ul>
+    <hr>
+    <h2>Listas de Definición</h2>
+    Las listas de Definición en HTML5, tienen una estructura totalmente distinta
+    <br>a la estructura que presenta las listas ordenadas y desordenadas.
+    <br>La estructura que presenta es la siguiente:
+    <ul>
+        <li>La etiqueta <b>dl:</b> Se conoce como Description List y se encarga
+            <br>de delimitar la lista completa. Tiene etiqueta de apertura y cierre.
+        </li>
+        <li>La etiqueta <b>dt:</b> Se conoce como Description Term.
+            <br>Delimitar los términos de la lista
+        </li>
+        <li>La etiqueta <b>dd:</b> Se conoce como Definition Description.
+            <br>Delimita las definiciones
+        </li>
+    </ul>
+    <h3>Ejemplo de Lista de Definición</h3>
+    <dl>
+        <dt><b>dl</b></dt>
+            <dd>Crea la caja que contiene los items de la lista</dd>
+        <dt><b>dt</b></dt>
+            <dd>Item que contiene un término a definir</dd>
+        <dt><b>dd</b></dt>
+            <dd>Item que contiene una definición</dd>
+    </dl>
+</body>
+</html>
