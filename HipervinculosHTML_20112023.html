@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipervínculos en HTML</title>
+</head>
+<body>
+    <h1 id="titulo">Hipervínculos o Links</h1>
+    Son elementos muy característicos de los diseños de páginas web, puesto que nos van a permitir que las páginas
+    <br>se puedean relacionar entre sí de una manera sencilla y con libertad (independientemente de dónde se alojen)
+    <br>Existen por lo tanto dos tipos de hipertexto o hipervínculos:
+    <ul>
+        <li>El enlace, es decir, el elemente texto o imagen sobre el que se puede hacer click con el ratón</li>
+        <li>El destino, es decir, el elemento (página web, imágen, archivo, etc.) que se muestra al hacer
+            <br>click en el enlace.</li>
+    </ul>
+    <br id="estructura">La estructura en la que se basa los hipervínculos es la siguiente.
+    <ul>
+        <li>Etiqueta de apertura que se llama anchor (anclaje). Viene definida por la etiqueta a de 
+            <br>apertura y cierre.</li>
+        <li>Atributo. Este atributo es el href, o hace referencia al link al que se quiere ir. Siempre entre 
+            <br>doble comillado de apertura y cierre. (".....").
+        </li>
+        <li>El texto que va entre la etiqueta de apertura y cierre, que es el que utilizaremos como enlace</li>
+    </ul>
+    <!--Estructura de un hiperenlace:
+        <a href="dirección_web o al sitio que queramos ir">Texto que se quiera que actue como link</a>
+    -->
+    <br><a href="https://unirfp.unir.net/">Pincha aquí para ver los Ciclos de UNIR FP</a>
+    <br><a href="ListasHTML_15112023.html">Pincha para ver los apuntes de Listas en HTML</a>
+    <br>
+        <a href="https://www.marvel.com" target="_blank">
+            <img src="img/marvel.jpeg" alt="" width="400px" height="300px">
+        </a>
+    <br>Para insertar un hipervínculo con un correo electrónico, utilizamos el atributo mailto
+    <br><a href="mailto:raul.rodriguez@proeducaglobal.com">Contacta con tu profe</a>
+    <hr>
+    <a href="#estructura">Que me lleve a la estrucutura del documento</a>
+    <br><a href="#titulo">Que me lleve al título del documento</a>
+</body>
+</html>
