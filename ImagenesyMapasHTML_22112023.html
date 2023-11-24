@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes HTML</title>
+</head>
+<body>
+    <h1>Imágenes en HTML</h1>
+    En informática podemos distinguir dos tipos de imágenes:
+    <ul>
+        <li>Imágenes de Mapa de bits: formadas por puntos de colores.
+            <br>Ejemplo: imagenes de 8bits (videojuegos antiguos)</li>
+        <li>Imágenes vectoriales: formadas por formas geométricas. Eje: ilustraciones, imágenes de carteles, etc.</li>
+    </ul>
+    <h3>Ventajas y Desventajas Imágenes Vectoriales (SVG)</h3>
+    <ul>
+        <li>Ventaja:Ocupan poco espacio y se pueden ampliar a cualquier escala sin que pierda calidad de imagen</li>
+        <li>Inconveniente: No permiten representar imágenes sin formas definidas. Eje: retrato.</li>
+    </ul>
+    <h3>Ventajas y Desventajas Imágenes Mapa de Bits (bpm)</h3>
+    <ul>
+        <li>Ventaja:Si que permiten representar imáganes sin formas definidas</li>
+        <li>Inconveniente: Pierden mucha calidad al ampliardas y ocupan mucho espacio en el disco duro.</li>
+    </ul>
+    <h3>Etiqueta img para insertar fotos en HTML</h3>
+    Para insertar fotos en HTML, utilizaremos la etiqueta img.
+    <br>La estructura que tiene es la siguiente:
+    <ul>
+        <li>Monoetiqueta img (no tiene etiqueta de cierre).</li>
+        <li>Atributo src (source). Sirve para poder vincular la foto que queremos mostras.</li>
+        <li>La dirección donde se ubica la foto en donde tenemos que indicar a parte del nombre, 
+            <br>el formato (extensión) que tiene. Ejemplo: foto.png /.jpg /.gif /.svg...
+        </li>
+    </ul>
+    <br>Ejemplo de foto insertada con etiqueta img.
+    <br><img src="img/rick_morti.jpg" alt="Imagen de Rick and Morty" width="300px" height="200px"  title="Rick sufriendo con Morty">
+    <h3>Atributos asociados a las fotos en HTML</h3>
+    <ul>
+        <li><b>src:</b> indica la dirección (URI) de acceso a la imagen</li>
+        <li><b>alt: para indicar un breve texto en caso de que la imagen falle.</b></li>
+        <li><b>longdesc:</b> indica es una URI de una descripción de una foto o imagen en caso de tener 
+        <br>asociado un mapa de imágenes, describir imágenes.</li>
+        <li><b>height y width:</b> para dar altura y anchura a la foto</li>
+        <li><b>usemap:</b> Sirve para asociar a la imagen un mapa de imágenes (como un marcador)</li>
+        <li><b>ismap:</b> sirve para definir un mapa de imágenes</li>
+        <li><b>title:</b> a forma de tip, muestra información en un cuadradito amarillo de la imagen cuando
+        <br>pasamos el ratón por encima.</li>
+    </ul>
+    <h3>Figure en HTML</h3>
+    Permite asociar un texto con una imagen.
+    <ul>
+        <li><b>figure:</b> es la etiqueta padre. Es decir, el resto de etiquetas dependerán o caerán de esta</li>
+        <li><b>img:</b> es una etiqueta para insertar imágenes</li>
+        <li><b>figcaption:</b> es una etiqueta que contendrá el texto asociado a la imagen</li>
+    </ul>
+    <br>Ejemplo de etieuqeta figure
+    <br>
+    <figure>
+        <figcaption>Logotipo de HTML, CSS y JS</figcaption>
+        <img src="img/logo.png" alt="">
+    </figure>
+    <h3>Insertar un vídeo de Youtube</h3>
+    <iframe width="500px" height="400px" src="https://www.youtube.com/embed/vlCXdvcgiE0" title="Aprende Git en 15 Minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <h3>Insertar un mapa de Google Maps</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6772108274918!2d-3.710663723559921!3d40.4160010556829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228792da1802b%3A0x3d53fb8c68aab871!2sPl.%20Mayor%2C%2023%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1700679402184!5m2!1ses!2ses" width="500px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
