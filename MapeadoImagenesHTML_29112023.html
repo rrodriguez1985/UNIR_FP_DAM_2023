@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeado Imágenes</title>
+</head>
+<body>
+    <h1>Mapeado Imágenes</h1>
+    Mapeado en HTML, consiste en establer o localizar/identificar zonas en imágenes para establer puntos de anclaje
+    <br>que nos lleven a otras webs (páginas web en internet o propias), así como a otras zonas de nuestros proyectos.
+    <br> Para ello, utilizaremos una etiqueta que se llama map y que tiene una serie de atributos.
+    La etiqueta map, está formada por las siguientes etiquetas y atributos:
+    <ul>
+        <li>usemap: el atributo que se indica en la imagen para establecer el nombre del mapeado. Se indica con un # y el nombre dado.</li>
+        <li>area: es una etiqueta (con apertura y cierre) que sirve para especificar una región geométrica del mapa
+            <br> y el vínculo asociado a esta región.
+        </li>
+        <li>shape: este atributo lo que hace es especificar el tipo de área que vamos a establer. Pudiendo ser
+            <br>de 4 tipos: default, rect, circle y poly.
+        </li>
+        <li> región de área default: coge por defecto TODA la región de la imagen a mapear.</li>
+        <li>región rect: rectangular, y para poder establecer este tipo de región, necesitamos establecer un punto X1,Y1
+            <br> y un punto X2,Y2. Siendo el primer punto (X1,Y1) el vértice superior izquierdo de la imagen, y el segundo 
+            <br>punto (X2,Y2), el vértice inferior derecho.
+        </li>
+        <li>región circle: circular. En este caso establecemos un punto central X,Y y un valor del radio de la circunferencia
+            <br> del área que queremos establecer.
+        </li>
+        <li>región poly: Polígono, en donde tenemos que establer como mínimo 3 puntos de coordenadas (X1,Y1, X2,Y2, X3,Y3...)
+            <br> con el fin de poder establecer el área de mapeado que queremos poner. La identificación de los puntos de 
+            <br>coordenadas, se establecer siguiendo el sentido de las agujas del reloj.
+        </li>
+        <li>Coordenadas: indican la posición en pantalla del mapeado, y que son valores de longitud del mismo.</li>
+    </ul>
+    <hr>
+    <h3>Ejemplo de Mapeado con distintas áreas</h3>
+    <img src="img/marvel_mapeado.jpg" alt="" usemap="#marvel">
+    <map name="marvel">
+        <!-- Mapeado con rect: esquina superior izquierda (x1,y1) y esquina inferior derecha (x2,y2) -->
+        <area shape="rect" coords="1,1,374,400" href="https://unirfp.unir.net/" target="_blank" alt="">
+        <!-- <area shape="rect" coords="376,1,748,397" href="https://marvel.com" target="_blank" alt=""> -->
+        <!-- Mapeado con circle: punto central X1,Y1 y un valor de radio de la circunferencia -->
+        <area shape="circle" coords="505,91,38" href="https://marvel.com" target="_blank" alt="">
+        <!-- Mapeado con poly: establecer 3 puntos como mínimo, siguiendo el sentido de las agujas del reloj (izq a der) -->
+        <area shape="poly" coords="496,163,518,155,525,173,502,178" href="https://google.es" target="_blank" alt="">
+    </map>
+</body>
+</html>
