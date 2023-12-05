@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    Un tabla es un conjunto de celdas donde podemos alogar distintos contenidos: imagenes, texto, formulario, vídeos, etc.
+    <br>Las tablas en HTML se definen a través de tres etiquetas que son su base principal:
+    <ul>
+        <li><b>table:</b>con esta etiqueta definimos la tabla en HTML</li>
+        <li><b>tr:</b>es aquella que divide la tabla en filas</li>
+        <li><b>td:</b>es aquella que divide la fila en celdas</li>
+    </ul>
+    <br>Las tablas, fueron los elementos principales de maquetación en HTML4.
+    <br>Con la llegada de la normativa de HTML5, se empezó a cambiar las tablas por etiquetas semánticas y por
+    <br>divs para poder maquetas y dar una mayor libertad a nuestros diseños y elementos de la web.
+    <br>
+    <br>Ejemplo de tabla de 2 Filas por 2 Columnas (2 celdas):
+    <br>
+    <br> <table border="1px">
+            <!-- etiqueta que define una tabla en html -->
+            <tr>
+                <!-- tr define la fila de nuestra tabla
+                td define el número de celdas de nuestra tabla. En este caso 2 por fila -->
+                <td>Nombre</td>
+                <td>Apellido</td>
+            </tr>
+            <tr>
+                <td>Raúl</td>
+                <td>Rodríguez</td>
+            </tr>
+        </table>
+        <br>
+        <h3>Propiedades o Elementos de una Tabla</h3>
+        <ul>
+            <li>table: tiene etiqueta de apertura y cierre. Define una tabla en HTML</li>
+            <li>caption: tiene etiqueta de apertura y cierre. Se utiliza para poner un título a la tabla</li>
+            <li>Atributo align=top/bottom: permite colocar el título arriba o abajo de nuestra tabla</li>
+            <li>tr: tiene etiqueta de apertura y cierre. definir la fila de una tabla</li>
+            <li>td: tiene etiqueta de apertura y cierre. define la celda (columna) de una tabla</li>
+            <li>thead: Define la cabecera de una tabla.</li>
+            <li>th: Define una celda de tipo cabecera en la tabla.</li>
+            <li>tbody: define el contenido de un tabla</li>
+            <li>tfoot: define un pie de la tabla</li>
+        </ul>
+        <br>
+        <br>Ejemplo de Tabla con Caption
+        <br>
+        <br>
+        <table border="2px">
+            <caption align="bottom">Sistemas Operativos</caption>
+            <tr>
+                <th>Tipo de Licencia</th>
+                <th>SSOO</th>
+            </tr>
+            <tr>
+                <td>Privada/Pago</td>
+                <td>MS Windows 11</td>
+            </tr>
+            <tr>
+                <td>Software Libre</td>
+                <td>Ubuntu 23.04</td>
+            </tr>
+            <tr>
+                <td>Software Libre</td>
+                <td>Kali Linux</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Combinación de tablas en HTML</h3>
+        Con las etiquetas td y th, podemos utilizar lo que se conoce como combinación de celdas en tablas.
+        <br>La combinación de celdas en tablas, no es más que "unificar" celdas de manera que podamos
+        <br>diseñar distintas estructuras y formas dentro de nuestra tabla con el fin de hacer más 
+        <br>atractivas visualmente y colocar mejor el contenido de las mismas.
+        <br>Los atributos que utilizaremos para ellos son los siguientes:
+        <ul>
+            <li><b>colspan:</b> indicar el númoer de filas que ocupa la celda (combinación de filas)</li>
+            <li><b>rowspan:</b>indica el número de columnas que icula la celda (combinación de columnas)</li>
+        </ul>
+        <br>
+        <br align="center">Ejeplo de Tabla con Rowspan y Colspan
+        <table border="1px" align="center" width="100%" height="100%">
+            <tr>
+                <!-- fila 1 -->
+                <td>A</td>
+                <td>B</td>
+                <td rowspan="3" bgcolor="pink"><font color="white">C</font></td>
+                <td bgcolor="green"><font color="red" face="Comic Sans MS">D</font></td>
+            </tr>
+            <tr>
+                <!-- fila 2 -->
+                <td rowspan="2"><font size="22px">E</font></td>
+                <td>F</td>
+                <td rowspan="3">G</td>
+                <!-- <td>H</td> -->
+            </tr>
+            <tr>
+                <td>H</td>
+                <!-- <td>J</td>
+                <td>K</td>
+                <td>L</td> -->
+            </tr>
+            <tr>
+                <td colspan="2" align="center">I</td>
+                <td>J</td>
+                <!-- <td>O</td>
+                <td>P</td> -->
+            </tr>
+        </table>
+</body>
+</html>
