@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    Los formularios en HTML, son elementos que nos van a dotar de cierta funcionalidad y dinamismo a nuestras páginas web.
+    <br>Nos van a permitir interactuar con nuestras páginas web y por lo tanto son elementos fundamentales para poder recoger información
+    <br> y posteriormente almacenarla con el fin de gestionar esta.
+    <br>Los formularios permiten dos tipos de funciones:
+    <ul>
+        <li>Recoger información del usuario</li>
+        <li>Enviar esos datos que se han guardado, para procesarlos o realizar cualquier tipo de operación que se requiera con ellos.</li>
+    </ul>
+    <br>Los principales objetivos que tenemos que tener en cuenta a la hora de diseñar un formulario en HTML, son los siguientes:
+    <ul>
+        <li>El formulario tiene que ser lo más sencillo posible a la hora de la inserción de datos por parte del usuario.</li>
+        <li>La experiencia del usuario (UX) sea lo más agrable posible.</li>
+        <li>Que los datos introducidos por el usuario estén en un formato predecible y esperado</li>
+        <li>Reducir los errores al introducir datos en la medida de lo posible y comunicar cláramente al usuario si esto ocurre.</li>
+    </ul>
+    <hr>
+    <h2>Etiquetas básicas para la creación de un Formulario en HTML</h2>
+    Para crear un formulario en HTML, utilizaremos la etiqueta con apertura y cierre llamada form
+    <!-- <form action=""></form> -->
+    <br>A parte de la etiqueta form que establece que vamos a usar un formulario en HTML, tenemos que tener en cuenta una serie de propiedades
+    <br>que van asociada a estas:
+    <ul>
+        <li><b>action</b>: Indicar la dirección URL o BBDD o web, etc. (Dirección Backend) a la que queremos enviar la información de nuestro
+            <br>formulario.
+        </li>
+        <li><b>method</b>: Método puede ser <b>get</b> o <b>post</b>. Get se utiliza cuando queremos mostrar la información que se envía
+        <br>de nuestro formulario a través del protocolo HTTP/HTTPS de nuestra web.Post se utiliza cuando queremos oclutar la información 
+        <br> de nuestro formulario a través del protocolo HTTP/HTTPS</li>
+        <li><b>name</b>: dar un nombre del formulario.</li>
+        <li><b>target</b>: Se utiliza para abrir el formulario en una pestaña nueva</li>
+        <li><b>enctype</b>:Codificar la información del envio del formulario.</li>
+        <li><b>autocomplete</b>: Tiene función on u off, es para activar o desactivar el autocompletado de nuestro formulario en la web.</li>
+    </ul>
+    <br>Ejemplo de Formulario Básico
+    <br>
+    <form name = "alumnos_dam" method="post" action="alumno.php">
+        Nombre de alumno: <input type="text" name="" id="">
+        <br><input type="submit" value="Registrar">
+    </form>
+    <hr>
+    <h2>Tipos de Datos que podemos gestionar en un Formulario de HTML</h2>
+    Podemos obtener cualquier tipo de información que se quiera/requiera de un formulario. Sí que es verdad, que los más utilizados son 
+    <br>los siguientes:
+    <ul>
+        <li>Información de texto: Nombres, apellidos, direcciones físicas, etc. Utilizaremos elementos input y textarea (type=text).</li>
+        <li>Número o cantidades: Edades, precios, cuantías, etc. Utilizaremos elementos input pero para números (type=number)</li>
+        <li>Fechas u horas. Fecha de nacimientos, calendarios, etc.Utilizaremos elementos input pero para fechas (Eje:type=date)</li>
+        <li>Verdadero o Falso. Utilizaremos input type=checkbox</li>
+        <li>Opciones únicas donde podemos elegir entre 2 o + opciones. Utilizaremos input type=radio o select</li>
+        <li>Varias Opciones. Utilizaremos select multiple, input checkbox</li>
+        <li>Opciones abiertas. datalist</li>
+        <li>Seleccionar colores: input type=color</li>
+        <li>Seleccionar archivos. inpunt type=file</li>
+    </ul>
+    <h3>Ejemplo de las etiquetas de entrada de datos en Formularios HTML</h3>
+    <form name = "alumnos_dam" method="post" action="alumno.php">
+     Entrada de Texto:<input type="text" name="" id="">
+     <br>
+     <br>Texto de busqueda: <input type="search" name="" id="">
+     <br>
+     <br>Introducir números de telefono: <input type="tel" name="" id="">
+     <br>
+     <br>Introducir Dirección URL: <input type="url" name="" id="">
+     <br>
+     <br>Dirección de correo: <input type="email" name="" id="">
+     <br>
+     <br>Introducir Password: <input type="password" name="" id="">
+     <br>
+     <br>Escribe tu opinión sobre el Ciclo:
+     <br><textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+    <br>
+    <h3>Ejemplo con etiquetas básicas de entrada</h3>
+    <form name="formulario" action="registro.php" method="post">
+        <!-- Campo de nombre de usuario -->
+        Nombre: <input type="text" name="nombre" id="" placeholder="Indica tu nombre de pila">
+        <br>
+         <!-- Campo de correo electrónico -->
+        Mail: <input type="email" name="mail" id="" placeholder="Example:raul@unir.com">
+        <br>
+         <!-- Campo de Teléfono -->
+        Teléfono: <input type="tel" name="telefono" id="" placeholder="+xx xxx xxx xxx">
+        <br>
+        <!-- Campo de página web -->
+       Web de contacto: <input type="url" name="web" id="" placeholder="http://www.unir.com">
+       <br>
+       <!-- Campo de password -->
+      Password: <input type="password" name="password" id="" placeholder="Introduce combinación alfanumerica">
+      <br>
+      <!-- botón de envio -->
+     <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
