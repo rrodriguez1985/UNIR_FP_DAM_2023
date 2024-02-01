@@ -98,6 +98,168 @@
       <br>
       <!-- botón de envio -->
      <input type="submit" value="Enviar">
+     <hr>
+     <h3>Campos de Entrada de Información Numéricos</h3>
+     Para poder obtener información numérica en nuestros formularios, podemos utilizar dos tipos de campos existentes:
+     <ul>
+        <li>input type=numer con el cuál estamos indicando que el valor de entrada será un número</li>
+        <li>Campo de Rango: input type=range</li>
+        <li>Los atributos que van a asociados a erstos son: min (establece un valor mínimo para pasar la validación), max (número máximo permitido para pasar validación
+            <br>step (variación permitida entre números para pasar validación)
+        </li>
+     </ul> 
+     <br>Ejemplo campus Numéricos
+            <form name="formulario" method="post" action="https://dam.es">
+                <!-- Ejemplo input type = numer: Número entre 10 y 50, de 5 en 5. Valor por defecto: 25 -->
+                <input type="number" name="numero" id="" value="25" min="10" max="50" step="5">
+                <br>
+                <!-- Su misma versión, utilizando el slider en rango numérico -->
+                <input type="range" name="numrango" id="" value="25" min="10" max="50" step="5">
+            </form>
+    <br>
+    <h3>Campos de Entrada de Información: Fecha y Hora</h3>
+    Con este tipo de atributos: type fecha/hora, en los campos input, podemos establecer o insertar elementos del calendario a nuestro formulario.
+    <br>Esto se da / se presta, desde HTML5.1. Anteriormente, esto no era viable.
+    <br> Ejemplos:
+    <br><form name="formulario" method="post" action="https://dam.es">
+        <!-- Fecha formulario básico-->
+        Inserte fecha de nacimiento: <input type="date">
+        <br>
+        <!-- Hora básica -->
+        <br>Inserte hora de fichaje:<input type="time">
+        <br>
+        <!-- Fecha y hora local -->
+        <br>Fecha actual en Madrid:<input type="datetime-local">
+        <br>
+        <!-- Mes y Semana -->
+        <br>Mes Actual:<input type="month">
+        <br>
+        <br>Semana Actual:<input type="week">
     </form>
+    <hr>
+    <br><form name="formulario" method="post" action="https://dam.es">
+        Seleccione el mes deseado:
+        <input type="month" name="mes" value="2024-01" min="2023-05" max="2025-06" step="2">
+        <br>
+        Seleccione el día deseado:
+        <input type="date" name="dia" value="2024-01-01" min="2023-05-10" max="2024-06-01" step="3">
+    </form>
+    <hr>
+    <h3>Controles: Casillas y Botones</h3>
+    Podemos utilizar casillas o botones de verificación u opción.
+    <br>Existen principalmente dos tipos:
+    <ul>
+        <li>Casillas de verificación: son las que establecen una opción de verdadero o falso. Se puede añadir el atributo checked para forzar que esa opción
+            <br>esté activada desde el comiendo.
+        </li>
+        <li>Botones radio: se utilizan para marcar un sóla opción de varias posibles. Si las opciones son demasiadas, se suele optar por una lista de selección
+            <br>Se les agrupa por grupos con un mismo atributo name para cada opción y un value.
+        </li>
+    </ul>
+    <br>Ejemplo de formulario con Checked y Radio
+    <br><form name="formulario" method="post" action="https://dam.es">
+        <!-- Opción de selección con radio -->
+        <b>¿Seguirá Modric en el Real Madrid el año que viene?</b>
+        <br><input type="radio" name="futbol" value="S">Si, se retirará en el equipo blanco.
+        <br><input type="radio" name="futbol" value="N">No, se irá a Qatar a jugar con CR7.
+        <br><input type="radio" name="futbol" value="N/S">No, se irá a jugar con el Cholo al Atleti
+        <br>
+        <br>
+        <!-- Opción de selección con checkbox -->
+        <b>¿En qué puesto te gustaría trabajar en el futuro cuando acabes DAM?</b>
+        <br><input type="checkbox" name="Desarrollo Front" checked>Desarrollo Front 
+        <br><input type="checkbox" name="Desarrollo Backend">Desarrollo Backend
+        <br><input type="checkbox" name="Ciberseguridad" checked> Ciberseguridad
+        <br><input type="checkbox" name="Varios"> Big Data e IA
+    </form>
+        <hr>
+        <h3>Listas de Selección</h3>  
+        Dentro de esta opción, podemos utilizar dos tipos de listas:
+        <ul>
+            <li>Lista Cerrada de opciones: utilizamos la etiqueta select y la etiqueta option</li>
+            <li>Lista Abierta de opciones: utilizamos la etiqueta datalist</li>
+        </ul>
+        <br>
+        <h4>Ejemplo de Lista Cerrada</h4>
+        Listas de Sistemas Operativos: 
+            <select name="ssoo" id="">
+                <option value="1">Windows 11</option>
+                <option value="2">Ubuntu</option>
+                <option value="3">Kali Linux</option>
+                <option value="4">Mac OS Yosemite</option>
+            </select>
+            <br>
+        <h4>Ejemplo de Lista Abierta</h4>
+        <input list="fruits">
+        <datalist id="fruits">
+            <option value="manzanas"></option>
+            <option value="platanos"></option>
+            <option value="pera"></option>
+            <option value="coco"></option>
+            <option value="naranja"></option>
+        </datalist>
+        <br>
+        <h4>Ejemplo de Lista de Seleccionables</h4>
+        <p>
+            Selecciona la opción deseada:
+            <select name="combo" id="">
+                <option value="1">Opcion 1</option>
+                <option value="2" selected>Opcion 2</option>
+                <option value="3">Opcion 3</option>
+            </select>
+        </p>
+        <h4>Ejemplo de Lista de Selecciones Múltiples</h4>
+        Seleccionando el boton CTRL, puedo seleccionar varias opciones múltiples.
+        <p>
+            Selecciona la opción deseada: <br>
+            <select name="combo" multiple>
+                <optgroup label="Sistemas Operativos Propietarios">
+                    <option value="1" label="Windows 7">
+                    <option value="2" label="Windows 10">
+                    <option value="3" label="Windows 11">
+                </optgroup>
+                <optgroup label="Sistemas Operativos OpenSource">
+                    <option value="1" label="Linux Mint">
+                    <option value="2" label="Red Hat">
+                    <option value="3" label="Debian">
+                    <option value="3" label="Lubuntu">
+                </optgroup>
+            </select>
+        </p>
+        <h3>Selección de Color</h3>
+        Seleccione el color del coche que desee:<input type="color">
+        <h3>Selección de Archivos</h3>
+        Adjuntar Archivos:<input type="file" name="deberes" accept=".pdf, jpg, .doc" multiple>
+        <hr>
+        <h3>Campos de Entrada de Información: Agrupación de Campos</h3>
+        En los formularios de HTML, podemos usar una serie de etiquetas que nos ayuden a organizar los elementos reagrupándolos por categorías o temáticas.
+        <br>Las etiquetas que nos ayudan a estos, son las siguientes:
+        <ul>
+            <li>fieldset: agrupación visual o temática de los campos de entrada</li>
+            <li>legend: es una etiqueta que nos ayuda a poner una leyenda al fieldset.</li>
+            <li>label: relacionar campo y texto. Lo vamos a utilizar para dar apariencia a los formuarios (CSS) o para darle funcionalidad (JS)</li>
+        </ul>
+        <hr>
+        <form action="https://dam.es" method="post">
+            <fieldset><legend>Ficha Alumno</legend>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    Nombre: <input type="text" name="nombre" id="" label="nombre" placeholder="Indica tu nombre de pila">
+                    <br>
+                    Apellidos: <input type="text" name="apellidos" id="" label="apellidos">
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Formación Académica</legend>
+                    <br><input type="checkbox" name="No tiene">Sin estudios
+                    <br><input type="checkbox" name="ESO" checked>ESO
+                    <br><input type="checkbox" name="Bachillerato">Bachillerato
+                    <br><input type="checkbox" name="FP" checked> FP
+                    <br><input type="checkbox" name="Grado Universitario"> Grado Universitario
+                    <br><input type="checkbox" name="Master"> Master
+                </fieldset>
+            </fieldset>
+        </form>
+
 </body>
 </html>
