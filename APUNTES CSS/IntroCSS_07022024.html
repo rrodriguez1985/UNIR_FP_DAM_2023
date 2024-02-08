@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            color:white;
+            font-size: 20px;
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <title>Introducción a CSS</title>
+</head>
+<body>
+    <h1>Introducción a CSS</h1>
+    Hasta ahora, cuando hemos diseñado páginas web, siempre hemos mezclado la parte de información/estructura (HTML) con la parte más 
+    <br>visual de apariencia: colores, fondos, tamaños de tipografía, tipos de letra, etc.
+    <br>Actualmente, esto ya no se aplica de esta manera, sino que se tiene por un lado la parte de información / estructura recogida
+    <br> en un documento HTML, y por otro lado, tenemos toda la parte visual / apariencia en un documento denominado <b>Hoja de Estilo</b>
+    <br> o <b>CSS ( Cascading Style Sheet)</b>
+    <br>El motivo por el que se tiene separado la parte de HTML de la parte de CSS, es para poder tener todo mucho más organizado y sobre todo,
+    <br>poder localizar todo el contenido de una manera más rápida y sencilla en caso de que se tenga que modificar cualquier tipo de información /
+    <br> apariencia de nuestro proyecto web.
+    <br>Ejemplo de lo que se entiende como HTML y lo que se entiende como CSS
+    <br><img src="img/HTMLvsCSS.jpg" alt="">
+    <br>En conclusión, podemos establecer que HTML definirá la estructura semántica y contenido de nuestra web, mientras que CSS, definirá, como es
+    <br>nuestra página web en cuanto a apariencia: tamaño de letra, color, márgenes, posicionamiento, etc.
+    <br>Podemos usar un único CSS para varios archivos HTML, puesto que en este último es donde decidiremos qué tipo de CSS queremos aplicar.
+    <br>La extesión de archivo HTML es <b>.html</b>, mientras que la extensión de archivo CSS es <b>.css</b>. Esto es siempre y cuando vayamos a utilizar
+    <br>un documento CSS externo.
+    <hr>
+    <h2>Tipos de CSS: Cómo usarlos?</h2>
+    Antes de empezar con CSS, tenemos que conocer que podemos usarlo de tres maneras o formas distintas:
+    <ul>
+        <li><b>CSS Externo:</b>Un CSS Externo, es un archivo con extensión .css. Se vincula al HTML en el Head, a través de la etiqueta link.
+        <br> link rel = "stylesheet" type = "text/css" href= "style.css"
+    </li>
+        <li><b>CSS Interno:</b> Es un CSS que se establece mediante las etiquetas style de apertura y cierre dentro de mi head</li>
+        <li><b>CSS Embebido / Incrustrado:</b> Un CSS que se aplica directamente en la etiqueta (tag) de HTML, a través del atributo style</li>
+    </ul>
+    <h2>Ejemplo de CSS Externo</h2>
+    <p>Ejemplo de CSS Interno en Head</p>
+    <p>Ejemplo de <span style="color:olivedrab; font-size:32px">CSS Embebido</span></p>
+</body>
+</html>

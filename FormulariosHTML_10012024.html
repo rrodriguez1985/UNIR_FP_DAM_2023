@@ -235,9 +235,9 @@
         En los formularios de HTML, podemos usar una serie de etiquetas que nos ayuden a organizar los elementos reagrupándolos por categorías o temáticas.
         <br>Las etiquetas que nos ayudan a estos, son las siguientes:
         <ul>
-            <li>fieldset: agrupación visual o temática de los campos de entrada</li>
-            <li>legend: es una etiqueta que nos ayuda a poner una leyenda al fieldset.</li>
-            <li>label: relacionar campo y texto. Lo vamos a utilizar para dar apariencia a los formuarios (CSS) o para darle funcionalidad (JS)</li>
+            <li><b>fieldset: </b>agrupación visual o temática de los campos de entrada</li>
+            <li><b>legend: </b>es una etiqueta que nos ayuda a poner una leyenda al fieldset.</li>
+            <li><b>label: </b>relacionar campo y texto. Lo vamos a utilizar para dar apariencia a los formuarios (CSS) o para darle funcionalidad (JS)</li>
         </ul>
         <hr>
         <form action="https://dam.es" method="post">
@@ -259,6 +259,39 @@
                     <br><input type="checkbox" name="Master"> Master
                 </fieldset>
             </fieldset>
+        </form>
+        <h3>Botones en Formularios HTML</h3>
+        Podemos distinguir 4 tipos de botones para el uso en los formularios:
+        <ul>
+            <li><b>Botón de envío de formulario:</b> input type = "submit" </li>
+            <li><b>Botón de envío con imagen:</b> input type = image</li>
+            <li><b>Botón de borrado de formulario:</b> input type = reset</li>
+            <li><b>Botón sin funcionalidad:</b> input type = button o definido con las etiquetas de apertura y cierre button</li>
+        </ul>
+        <br> 
+        <h4>Ejemplo de botones: envio (submit)</h4>
+        <form action="raul.rodriguez@proeducaglobal.com" method="post">
+            Nombre y Apellido: <input type="text"><input type="submit">
+        </form>
+        <h4>Ejemplo de botones: envío con imagen</h4>
+        <form action="raul.rodriguez@proeducaglobal.com" method="post">
+            Nombre y Apellido: <input type="text"><input type="image" src="img/boton.png" width="80px" height="30px">
+        </form>
+        <h4>Ejemplo de botones: borrado (reset)</h4>
+        <form action="raul.rodriguez@proeducaglobal.com" method="post">
+            Nombre y Apellido: <input type="text"><input type="submit" value="Aprobar"><input type="reset" value="Eliminar">
+        </form>
+        <h4>Ejemplo de botones: Botón sin funcionalidad o funcionalidad con JS (JavaScript)</h4>
+        <form action="raul.rodriguez@proeducaglobal.com" method="post">
+            <button onclick="alert('Hola chicxs de 1ºDAW. Esto es un botón en JS dentro de un Formulario en HTML')">Pincha aquí</button>
+        </form>
+        <h4><b>Otro tipo de botones: Funcionalidad Alternativa</b></h4>
+        Se utiliza en HTML, para poder establecer varios botones en un mismo formulario con distintas acciones dentro del mismo.
+        <h4>Ejemplo de Formulario con varios botones</h4>
+        <form name=formulario method="post" action="mailto:raul.rodriguez@proeducaglobal.com">
+            Nombre y Apellidos: <input type="text" name="usuario" id=""><input type="submit" value="Enviar a Raúl">
+            <br><input type="submit" value="Enviar a RRHH" formaction="https://www.unirfp.es/rrhh">
+            <br><input type="submit" value="Enviar a Secretaria" formaction="https://www.unirfp.es/secretaria">
         </form>
 
 </body>

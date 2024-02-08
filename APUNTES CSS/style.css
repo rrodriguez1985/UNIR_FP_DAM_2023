@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    color:darkorchid;
+    background-color: burlywood;
+    font-size: 20px;
+}
+h2{
+    color:blue;
+    text-align: center;
+}
+ul{
+    color:crimson;
+    font-size: 20px;
+    list-style: square;
+}
+img{
+    width: 450px;
+    height: 600px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Validación Básica</title>
+    <style>
+        input:valid, textarea:valid{
+            background: green;
+        }
+        input:invalid, textarea:invalid{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.miweb.com/basededatos.php" method="post">
+        Usuario: <input type="text" name="user" placeholder="Por ejemplo: Raúl" minlength="3" maxlength="25" required>
+        <br>
+        Password: <input type="password" name="pass" placeholder="Contraseña" minlength="4" required>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
