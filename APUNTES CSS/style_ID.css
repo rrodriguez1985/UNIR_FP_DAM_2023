@@ -1,0 +1,28 @@
+div{
+    border:2px solid red;
+    color:white;
+    background-color:crimson;
+}
+p{
+    font-size: 15px;
+    background-color: darkgreen;
+    color:antiquewhite;
+}
+#unico{
+    /*Los id en css, se representan con un # (almohadilla)
+    Los id se utilizan para dar características concretas a un único tipo de 
+    etiqueta en HTML. 
+    NO podemos aplicar un mismo nombre de id para distintas familias de etiqueta.
+    P.E: No podemos aplicar el id=unico para un div y para una p (salto de párrafo)
+    */
+    font-family: "Verdana";
+    font-size: 20px;
+    color:blue;
+    background-color: darkorange;
+}
+#segundo{
+    font-family: "Verdana";
+    font-size: 20px;
+    color:yellow;
+    background-color: rgb(21, 0, 255);
+}

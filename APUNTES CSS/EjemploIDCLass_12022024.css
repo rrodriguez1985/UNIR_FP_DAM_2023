@@ -1,0 +1,39 @@
+/*Establecemos a través de una clase llamada pkm (pokemon) características comunes
+para nuestras cajas*/
+/*A cada caja le hemos llamado con un id específico para atribuirles unas características
+únicas que los diferencien de los demas.*/
+h1{
+    text-align: center;
+    font-size: 42px;
+    color:darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    border-color: brown;
+    background-color: brown;
+    color:white;
+}
+.pkm{
+    border:2px solid black;
+    margin: 16px;
+    padding:16px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#electrico{
+    background-color: yellow;
+    color:gray;
+}
+#planta{
+    background-color: green;
+    color:darkgoldenrod;
+}
+#agua{
+    background-color: aquamarine;
+    color:blue;
+}
+#fuego{
+    background-color: orange;
+    color:black;
+}

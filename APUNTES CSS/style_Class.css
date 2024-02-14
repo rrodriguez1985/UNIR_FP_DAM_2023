@@ -1,0 +1,14 @@
+table, tr, td{
+    border: 2px solid black;
+}
+div{
+    font-size: 14px;
+    background-color: brown;
+}
+p{
+    font-size: 12px;
+    background-color: coral;
+}
+.tipografia{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
