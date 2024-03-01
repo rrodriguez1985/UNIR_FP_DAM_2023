@@ -1,0 +1,158 @@
+body{
+    /*Color de fondo y letra con nomenclatura común*/
+    background-color: deepskyblue;
+    color:crimson;
+}
+h1{
+    /*Color azul en rgba con capa alpha. Valores de 0 a 1.*/
+    color:rgba(0, 0, 255, 0.526);
+}
+ul{
+    /*Color blanco abreviado en Hexadecimal*/
+    color:#fff;
+}
+.caja{
+    color:#fff;
+    border:2px solid blue;
+    height: 50px;
+    width: 200px;
+    margin:auto;
+    padding:10px 20px;
+    text-align: justify;
+}
+
+table, tr, td{
+    border:1px solid white;
+    margin:100px;
+    padding:10px;
+}
+table{
+    background-color: darkgreen;
+    color:beige;
+}
+td{
+    font-size: 22px;;
+    background-color: brown;
+}
+.tamano{
+    font-size: 32px;
+    color:lightgreen;
+}
+#letra{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.visible{
+    height: 300px;
+    width: 300px;
+    color:white;
+    border:2px solid red;
+    /*
+        overflow: sirve para indicar al navegador lo que tiene que hacer
+        con el contenido que no cabe dentro de una caja/div y que es considerado
+        como contenido sobrante.
+        overflow: visible lo que hace es que el texto sobrante sobresalga de la caja, es decir,
+        se desbordará de la caja al no coger en ella.
+    */
+    overflow: visible;
+}
+.hidden{
+    height: 250px;
+    width: 300px;
+    color:white;
+    border:2px solid red;
+    padding:10px;
+    text-align: justify;
+    /*
+        overflow: sirve para indicar al navegador lo que tiene que hacer
+        con el contenido que no cabe dentro de una caja/div y que es considerado
+        como contenido sobrante.
+        overflow: hidden lo que hace es que el texto sobrante de la caja se esconda/oculte con respecto a 
+        su caja principal, dando la sensación de que no se sobresale nada.
+    */
+    overflow: hidden;
+}
+.scroll{
+    height: 250px;
+    width: 200px;
+    color:white;
+    border:2px solid red;
+    padding:10px;
+    text-align: justify;
+    /*
+        overflow: sirve para indicar al navegador lo que tiene que hacer
+        con el contenido que no cabe dentro de una caja/div y que es considerado
+        como contenido sobrante.
+        overflow: scroll hace que en la caja contenedora del texto, se color una barra de desplazamiento (principalmente
+        vertical aunque también puede aplicarse horizontalmente), con el fin de mostrar nuestro contenido.
+    */
+    overflow: scroll;
+}
+.Auto{
+    height: 250px;
+    width: 100px;
+    color:white;
+    border:2px solid red;
+    padding:10px;
+    text-align: justify;
+    /*
+        overflow: sirve para indicar al navegador lo que tiene que hacer
+        con el contenido que no cabe dentro de una caja/div y que es considerado
+        como contenido sobrante.
+        overflow: auto el navetgador es el encargado de colocar barras de desplazamiento según la necesidad que tenga
+        de mostrar el contenido de la caja.
+    */
+    overflow: auto;
+}
+.bordes_imagen{
+    display: block;
+    margin: auto;
+    /*Aplicar estilos a los 4 bordes del elemento*/
+    /* border: 20px outset green;  */
+    border-color:blue red green violet;
+    border-width: 20px 10px 50px;
+    border-style:solid dotted outset
+}
+.redondo{
+    display: block;
+    margin: auto;
+    border:10px solid white;
+    border-radius: 20px 30px;
+}
+.img_redondo{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-width:10px;
+    border-style: solid;
+    border-color: red blue green yellow;
+    border-radius: 180%;
+    /* border-radius: 20px 30px; */
+}
+table, tr, td{
+    margin:auto;
+    width: 80px;
+    height:80px;
+    background-color: black;
+    border-radius: 180%;
+}
+.rojo{
+    background-color: red;
+    border:4px solid red;
+    border-radius: 40px 0px 0px 0px;
+}
+.amarillo{
+    background-color: yellow;
+    border:4px solid yellow;
+    border-radius: 0px 0px 40px 0px;
+}
+.azul{
+    background-color: blue;
+    border:4px solid blue;
+    border-radius: 0px 0px 0px 40px;
+}
+.verde{
+    background-color: green;
+    border:4px solid green;
+    border-radius: 0px 40px 0px 0px;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PropiedadesCSS_21022024.css">
+    <title>Propiedades en CSS</title>
+</head>
+<body>
+    <h1>Colores en CSS</h1>
+    Las propiedades que podemos utilizar en CSS para aplicar colores son las siguientes:
+    <ul>
+        <li><b>color</b>: Cambiar el color del texto en css</li>
+        <li><b>background-color</b>:Cambiar el color de fondo de un elemento</li>
+    </ul>
+    <br>A parte de esto, debemos tener en cuenta que podemos poner de varias maneras colores en CSS:
+    <ul>
+        <li>Palabra Clave: Por ejemplo: color:red; background-color:grey; El propio nombre del color</li>
+        <li>Esquema rgb(red, blue, green): rbg(255,255,48)</li>
+        <li>Esquema rgba(red, blue, green, alpha): rgba(255,255,48,valores del 0-1) donde 1 es la capa más oscura, y el 0 la más clara</li>
+        <li>Esquema RGB Hexadecimal: #RRBBGG por ejemplo: #FF0055</li>
+        <li>Esquema RBG Hexadecimal Abreviado:#RBG por ejemplo: #F05</li>
+    </ul>
+    <hr>
+    <h1>Unidades en CSS: Absolutas y Relativas</h1>
+    <ul>
+        <li>Unidades Absolutras: Son aquellas que tienen una medida fija. 
+            <br>Son unidades que son poco flexibles y adaptables a resoluciones para diferentes tamaños de pantallas.
+            <br>Por: cm, picas, in (pulgadas), puntos (pt)...
+        </li>
+        <li>Unidades Relativas: Son aquellas que tienen una medida más flexible y adaptable a las resoluciones, y por lo tanto, 
+            <br> son las que se suelen utilizar por lo general para la programación / maquetación web.
+            <br>em (16px), rem, px (pixel), % (porcentajes)...
+        </li>
+        <li>width: para la anchura de nuestro elemento</li>
+        <li>height: para la altura de nuestro elemento</li>
+    </ul>
+    <hr>
+    <h1>Modelos de Cajas en CSS</h1>
+    Todos los elementos HTML, cuando creamos páginas web, están dentro de lo que se conoce como cajas o contenedores de contenido.
+    <br>Las cajas que vamos a utilizar, son principalmente div (cajas) o etiquetas semánticas como pueden ser: header, nav, footer,
+    <br>aside, article...
+    <br>Hasta ahora, utilizabamos tablas para maquetar, pero estas son poco flexibles a la hora de poderlas ajustar a distintas resoluciones,
+    <br>y por lo tanto, a la hora de realizar maquetación web lo que vamos a utilizar será este tipo de cajas (div) con una serie de propiedades
+    <br>que son las que se comentarán a continuación:
+    <ul>
+        <li><b>Margin:</b>Corresponde al margen existente entre el borde exterior de nuestra caja/elemento contenedor y nuestro navegador</li>
+        <li><b>Padding:</b>Corresponde al margen interior de nuestra caja, es decir, el espacio existente entre el contenido y el borde
+            <br>de nuestro elemento contenedor
+        </li>
+        <li><b>Contenido:</b>Son las etiquetas que van a ir dentro de nuestra caja o elemento contenedor</li>
+    </ul>
+    <br><img src="img/modelo_cajas_css.png" alt="">
+    <br>
+    <h2>Ejemplo div con margenes</h2>
+    <br><div class="caja">
+        Esto es un ejemplo de margin y padding
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td class="tamano">Hola</td>
+            <td>Adios</td>
+        </tr>
+        <tr>
+            <td class="tamano" id="letra">Bye <span style="color:red">bye</span></td>
+            <td>Arrivederci</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Elementos en Línea y Elementos en Bloque</h1>
+    <ul>
+        <li>Elementos en línea: son aquellos que se van sucediendo a lo largo de la misma línea de nuestra web, mientras vayan 
+            <br>cogiendo unos detras de otros y de izquierda a derecha.Van por lo tanto siguiendo el flujo de de la orientación
+            <br>asignada.
+        </li>
+        <li>Elementos en bloque: son elementos que, independientemente de la anchura que tengan, se separan verticalmente de los Elementos
+            <br>posteriores y anteriores. Es como si provocaran un salto de línea antes y después de un elemento.
+        </li>
+    </ul>
+    <hr>
+    <h1>Modelos de Canas en CSS: Ejemplos de Overflow</h1>
+    Utilizamos la propiedad <b>overflow</b> para indicar al navegador lo que debe de hacer con el contenido que no cabe dentro de una capa
+    <br>div y que es considerado como contenido sobrante.
+    <h3>Ejemplo Overflow Visible</h3>
+    <div class="visible">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem inventore minus asperiores, ab pariatur delectus sed, magni repudiandae dolore neque totam omnis enim sint cupiditate quos at esse, iusto error.
+        Dolores quas perferendis, at eveniet dolore fugit maiores doloremque pariatur, cupiditate ducimus, culpa modi possimus iusto dignissimos est eius! Consequatur harum veritatis maxime, est doloribus itaque labore inventore voluptatem. Dolorem?
+        Nisi deleniti facere architecto quidem veritatis sequi mollitia officia, dolores similique dolorum molestiae repellendus fugiat illo perspiciatis aperiam, ab excepturi, totam dignissimos blanditiis nihil magni esse sit ducimus assumenda? Facere?
+        Reprehenderit, accusamus autem. Pariatur iure, delectus repudiandae ratione molestias ipsum officiis, eligendi debitis deserunt quo modi dolorum ducimus ullam dicta blanditiis esse et porro. Tenetur omnis maiores molestias. Maxime, laboriosam.
+        Qui veritatis expedita, repudiandae nobis reiciendis tenetur, dicta vero inventore vel repellendus, sequi nulla. Dicta aliquam tempore vitae expedita maxime quae fugiat. Nostrum quo nesciunt tenetur exercitationem non, nobis voluptatum?
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>Ejemplo Overflow Hidden</h3>
+    <div class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem inventore minus asperiores, ab pariatur delectus sed, magni repudiandae dolore neque totam omnis enim sint cupiditate quos at esse, iusto error.
+        Dolores quas perferendis, at eveniet dolore fugit maiores doloremque pariatur, cupiditate ducimus, culpa modi possimus iusto dignissimos est eius! Consequatur harum veritatis maxime, est doloribus itaque labore inventore voluptatem. Dolorem?
+        Nisi deleniti facere architecto quidem veritatis sequi mollitia officia, dolores similique dolorum molestiae repellendus fugiat illo perspiciatis aperiam, ab excepturi, totam dignissimos blanditiis nihil magni esse sit ducimus assumenda? Facere?
+        Reprehenderit, accusamus autem. Pariatur iure, delectus repudiandae ratione molestias ipsum officiis, eligendi debitis deserunt quo modi dolorum ducimus ullam dicta blanditiis esse et porro. Tenetur omnis maiores molestias. Maxime, laboriosam.
+        Qui veritatis expedita, repudiandae nobis reiciendis tenetur, dicta vero inventore vel repellendus, sequi nulla. Dicta aliquam tempore vitae expedita maxime quae fugiat. Nostrum quo nesciunt tenetur exercitationem non, nobis voluptatum?
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>Ejemplo Overflow Scroll</h3>
+    <div class="scroll">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem inventore minus asperiores, ab pariatur delectus sed, magni repudiandae dolore neque totam omnis enim sint cupiditate quos at esse, iusto error.
+        Dolores quas perferendis, at eveniet dolore fugit maiores doloremque pariatur, cupiditate ducimus, culpa modi possimus iusto dignissimos est eius! Consequatur harum veritatis maxime, est doloribus itaque labore inventore voluptatem. Dolorem?
+        Nisi deleniti facere architecto quidem veritatis sequi mollitia officia, dolores similique dolorum molestiae repellendus fugiat illo perspiciatis aperiam, ab excepturi, totam dignissimos blanditiis nihil magni esse sit ducimus assumenda? Facere?
+        Reprehenderit, accusamus autem. Pariatur iure, delectus repudiandae ratione molestias ipsum officiis, eligendi debitis deserunt quo modi dolorum ducimus ullam dicta blanditiis esse et porro. Tenetur omnis maiores molestias. Maxime, laboriosam.
+        Qui veritatis expedita, repudiandae nobis reiciendis tenetur, dicta vero inventore vel repellendus, sequi nulla. Dicta aliquam tempore vitae expedita maxime quae fugiat. Nostrum quo nesciunt tenetur exercitationem non, nobis voluptatum?
+    </div>
+    <h3>Ejemplo Overflow Auto</h3>
+    <div class="Auto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem inventore minus asperiores, ab pariatur delectus sed, magni repudiandae dolore neque totam omnis enim sint cupiditate quos at esse, iusto error.
+        Dolores quas perferendis, at eveniet dolore fugit maiores doloremque pariatur, cupiditate ducimus, culpa modi possimus iusto dignissimos est eius! Consequatur harum veritatis maxime, est doloribus itaque labore inventore voluptatem. Dolorem?
+        Nisi deleniti facere architecto quidem veritatis sequi mollitia officia, dolores similique dolorum molestiae repellendus fugiat illo perspiciatis aperiam, ab excepturi, totam dignissimos blanditiis nihil magni esse sit ducimus assumenda? Facere?
+        Reprehenderit, accusamus autem. Pariatur iure, delectus repudiandae ratione molestias ipsum officiis, eligendi debitis deserunt quo modi dolorum ducimus ullam dicta blanditiis esse et porro. Tenetur omnis maiores molestias. Maxime, laboriosam.
+        Qui veritatis expedita, repudiandae nobis reiciendis tenetur, dicta vero inventore vel repellendus, sequi nulla. Dicta aliquam tempore vitae expedita maxime quae fugiat. Nostrum quo nesciunt tenetur exercitationem non, nobis voluptatum?
+    </div>
+    <hr>
+    <h1>Modelos de cajas en CSS: Zonas de un elemento</h1>
+    Dentro de una caja podemos encontrarnos las siguientes zonas a tener en cuenta:
+    <ul>
+        <li>Top: se refiere a la parte superior del elemento</li>
+        <li>Lef: se refiere a la parte izquierda del elemento</li>
+        <li>Right: se refiere a la parte derecha del elemento</li>
+        <li>Bottom: se refiere a la parte inferior del elemento</li>
+        <li>Center: que hace referencia a la posición central entre dos elementos</li>
+    </ul>
+    <br>
+    <br>Esto elementos podemos aplicarlos de la siguiente manera:
+    <ul>
+        <li>margin-top o padding-top</li>
+        <li>margin-bottom o padding-bottom</li>
+        <li>margin-right o padding-right</li>
+        <li>margin-left o padding-left</li>
+    </ul>
+    <br>La aplicación de estos elementos se pueden establecer de la siguiente manera:
+    <ul>
+        <li>margin con un solo valor: aplica a los 4 márgenes de los elementos: P.E. margin:40px</li>
+        <li>margin con dos valores: aplica el primer valor al top/bottom, y el segundo al right/left. P.E: margin: 4px 20px</li>
+        <li>margin con tres valores: aplica el primer valor al margen top, segundo valor a right/left, y el tercero al bottom.
+            <br>P.E. margin: 4px 20px 5px.
+        </li>
+        <li>margin con cuatro valores: aplica el primero al top, segundo al right, tercero al bottom y el cuarto al left.
+            <br>P.E. margin: 4px 6px 20px 8px.
+        </li>
+    </ul>
+    <br>MUY IMPORTANTE: Cuando se establecen estos valores, siempre se tiene que tener en cuetna que se sigue el sentido de las agujas
+    <br>del reloj. Siendo en este caso, el primer elemento el top, segundo el right, tercero el bottom y cuarto el left.
+    <br>Que esto no quita que podáis aplicar un valor a un lado concreto.P.E. margin-top: 20px y se aplicaría un margen de 20px sólamente al top.
+
+<hr>
+    <h2>Tipos de Bordes en CSS</h2>
+    CSS nos permite utilizar diversos tipos de propiedades para utilizar en los bordes de cajas, imágenes y otros elementos.
+    Para ello podemos utilizar la siguiente propiedad:
+    <ul>
+        <li><b>border-color</b>: se utiliza para poder dar color a un borde.</li>
+        <li><b>border-width</b>: es una propiedad que se utiliza para dar grosor al borde. thin|medium|thick</li>
+        <li><b>boder-style</b>: define el estilo del borde en CSS</li>
+    </ul>
+    Los tipos de border-style que podemos encontrarnos son los siguientes:
+    <ul>
+        <li>none: no aplica ningún tipo de estilo y coge el valor por defecto.</li>
+        <li>hidden: "oculta" los bordes</li>
+        <li>dotted: establece puntos en los bordes</li>
+        <li>dashed: establece rayas discontinuas</li>
+        <li>solid: borde sólido</li>
+        <li>double: doble línea de borde</li>
+        <li>groove: biselado con luz desde arriba</li>
+        <li>ridge: biselado con luz desde abajo</li>
+        <li>inset: establece un borde con profundidad hacia dentro</li>
+        <li>outset: establece un borde con profundidad hacia fuera</li>
+    </ul>
+    <br>Ejemplo de imagen y caja con bordes de estilo
+    <br>
+    <img class="bordes_imagen" src="img/tiposBordes.png" alt="">
+    <br>
+    <br>Div con border redondeados
+    <br>
+        <div class="redondo">
+            Esto es un caja con bordes redondeados
+        </div>
+        <br>
+        <img class="img_redondo" src="img/rick.jpg" alt="">
+        <br>
+        <br>
+        <h4>Juego Simon Dice en HTML y CSS</h4>
+        <table>
+            <tr>
+                <td class="rojo"></td>
+                <td class="verde"></td>
+            </tr>
+            <tr>
+                <td class="azul"></td>
+                <td class="amarillo"></td>
+            </tr>
+        </table>
+</body>
+</html>
