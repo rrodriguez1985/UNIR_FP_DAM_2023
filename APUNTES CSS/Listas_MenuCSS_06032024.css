@@ -1,0 +1,35 @@
+body{
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-top: -16px;
+}
+ul{
+    list-style:none ;
+}
+li{
+    color:white;
+    background-color: crimson;
+    /*Con la propiedad float:left, en CSS cambiamos el flujo de la colocación de los elementos
+    Es decir, pasamos de tener unos elementos apilados verticalmente, a situarlos de manera
+    horizontal*/
+    float:left;
+    width: 100px;
+    text-align: center;
+    margin-right:0px;
+    padding:0 4px;
+    border:2px solid #F38C82;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+li:hover, a:hover{
+    background-color: #F38C82;
+    color:crimson;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Ejemplo aplicación pseudoclases y pseudoelementos*/
+        #valido:valid, textarea:valid{
+            background: green;
+        }
+        #invalido:invalid, textarea:invalid{
+            background: red;;
+        }
+        #condiciones:checked{
+            height: 20px;
+            width: 20px;
+            background: blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejemplos Básicos Pseudoclases y Pseudoelementos</h1>
+    <form method="post" action="https://www.pruebas.com">
+        Usuario: <input type="text" id="valido" name="nombre" minlength="3" maxlength="25" required>
+        <br>
+        Contraseña: <input type="password"  id="invalido" name="pass" minlength="4" required>
+        <br><input type="checkbox" id="condiciones" value="requisitos">Acepto las condiciones de registro.
+        <br><input type="submit" value="login"><input type="reset" value="cancelar">
+    </form>
+</body>
+</html>

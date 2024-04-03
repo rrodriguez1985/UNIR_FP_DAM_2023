@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:red;
+}
+body{
+    background-image: url(img/matrix.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+ul{
+    text-align: center;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color:inherit;
+    font-size:20px;
+}
+nav li{
+    display: inline-block;
+    width: 220px;
+    padding:5px 10px;
+    margin: -2px;
+    background-color: whitesmoke;
+    border:1px solid darkgray;
+    text-align: center;
+}
+nav li:hover{
+    background: red;
+    color:whitesmoke;
+}
