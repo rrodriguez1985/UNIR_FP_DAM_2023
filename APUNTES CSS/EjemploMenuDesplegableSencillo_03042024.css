@@ -1,0 +1,71 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image: url(img/fondomenu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+header{
+    margin:auto;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+/*Daremos estilo a nuestro menú principal. que está contenido dentro de
+la clase nav*/
+.nav li a{
+    /*Los elementos a que están en el li directamente de la calse nav, 
+    heredarán las propiedades que les indicamos a continuación*/
+    
+    background-color: darkred;
+    color:azure;
+    text-decoration: none;
+    
+    /*Le asignamos un padding top y bottom de 10px, y padding right y left de 15px
+    Esto es según nuestras características, no hace falta coger el mismo valor*/
+    
+    padding:10px 15px;
+    
+    /*Por defecto, los elementos están en línea, y si los dejamos como tal, se solapan.
+    Los convertimos en bloques (block), y conseguimos el resultados de un conjunto de
+    cajas alineadas.*/
+    
+    display:block;
+}
+.nav li a:hover{
+    background-color: darksalmon;
+}
+.nav > li{
+    /*Indicamos que los elementos directos de li que están en nav, tendrán las
+    siguientes características*/
+    float:left;
+    /*con esto, lo que hago es que se situen los elementos de estar en vertical a horizontal.
+    Esto es debido a que el flujo normal de su posición, es de arriba hacia abajo.*/
+}
+.nav li ul{
+    /*Ocultamos los submenus, y luego los mostraremos*/
+    display: none;
+    /*Establecemos una posición absoluta a los submenus, con un tamaño mínimo
+    de anchura para que todos sean iguales*/
+    position:absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul {
+    /*Mostramos los submenus cuando sólo pasamos el ratón encima de la opción marcada*/
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li ul{
+    /* left:-140px; */
+    right: -140px;
+    /* top:0px; */
+    top:20px
+}
