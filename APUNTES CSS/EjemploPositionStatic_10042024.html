@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .container{
+            width: 100%;
+            /*Position:static, es considerada como la posición por defecto, y por lo tanto da igual
+            aplicarla como no aplicarla, puesto que la posición de los elementos NO va a cambiar 
+            en principio*/
+            position:static;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+            top:10px;
+            bottom:15px;
+            left:20px;
+            right: 10px;
+        }
+        .container div:nth-child(2n){
+            background-color: aqua;
+        }
+        .container div:nth-child(2n+1){
+            background-color: brown;
+        }
+
+    </style>
+    <title>Posicionamiento Static</title>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

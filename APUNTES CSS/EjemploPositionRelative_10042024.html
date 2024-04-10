@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .container{
+            width: 100%;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+        }
+        .container .relative{
+            /*Position: relative, nos permite posicionar una caja y después moverla
+            desde su lugar original (dejando su lugar)*/
+            position:relative;
+            top:50px;
+            left:50px;
+        }
+        .container div:nth-child(2n){
+            background-color: aqua;
+        }
+        .container div:nth-child(2n+1){
+            background-color: brown;
+        }
+
+    </style>
+    <title>Posicionamiento Relative</title>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="relative"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
