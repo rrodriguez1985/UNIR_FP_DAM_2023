@@ -1,0 +1,38 @@
+h1,h3{
+    text-align: center;
+    color:darkred;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    display:block;
+    margin:auto;
+    width: 200px;
+    height: 250px;
+}
+div{
+    position:absolute;
+}
+.uno{
+    left:320px;
+    top:600px;
+}
+.dos{
+    left:400px;
+    top:650px;
+}
+.tres{
+    left:480px;
+    top:700px;
+    z-index: 500;
+}
+.cuatro{
+    left:560px;
+    top:750px;
+}
+.cinco{
+    left:640px;
+    top:800px;
+}
+div:hover{
+    z-index: 1000000;
+}
