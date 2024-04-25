@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Para el icono del menú-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Ejemplo Web Responsive</title>
+</head>
+<body>
+    <!-- Container: será la caja principal que contendrá todos los elementos de mi página web -->
+    <div class="container">
+        <header class="rojo">
+            <h1>CFGS DAM</h1>
+            <nav>
+                <div class="icon"><i class="fa fa-bars" style="font-size:24px"></i></div>
+                <div class="menu_item">Inicio</div>
+                <div class="menu_item">Proyectos</div>
+                <div class="menu_item">Contacto</div>
+            </nav>
+        </header>
+        <!-- main: será una caja que contendrá todas las secciones más importantes de mi web: las imágenes y texto explicativo de mi web -->
+        <main>
+            <section class="main_text">
+                <div>
+                    <h1 class="rojo">Proyecto de Web Responsive para DAM</h1>
+                    <h3>Diseño Responsive</h3>
+                </div>
+                <div>
+                    <p>Página web responsive creada durante una de nuestras clases de lenguaje de marcas los míercoles</p>
+                    <p>Establecemos dos puntos de breakpoint, uno a 576px y otro a 992px, en los que se producen cambios de layout</p>
+                    <p>El proceso de se ha llevado a cabo empezando desde el diseño para pantallas más pequeñas hasta más grandes</p>
+                </div>
+            </section>
+            <section class="images">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.png" alt="">
+                <img src="img/7.jpg" alt="">
+                <img class="hidden" src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </section>
+        </main>
+        <!-- section: caja que contendrá artículos o noticias más relevantes de nuestra web -->
+        <section class="novedades">
+          <h2 class="rojo">Novedades</h2> 
+          <article>
+            <h3>24 de Abril del 2024</h3>
+            <h4>Información CFGS DAM</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eius facilis est autem, ab harum earum beatae enim vero consequatur blanditiis corrupti minus mollitia vitae accusantium recusandae reiciendis unde necessitatibus!</p>
+          </article>
+          <article>
+            <h3>24 de Abril del 2024</h3>
+            <h4>Información CFGS DAW</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eius facilis est autem, ab harum earum beatae enim vero consequatur blanditiis corrupti minus mollitia vitae accusantium recusandae reiciendis unde necessitatibus!</p>
+          </article>
+          <article>
+            <h3>24 de Abril del 2024</h3>
+            <h4>Información CFGS ASIR</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eius facilis est autem, ab harum earum beatae enim vero consequatur blanditiis corrupti minus mollitia vitae accusantium recusandae reiciendis unde necessitatibus!</p>
+          </article>
+        </section>
+    </div>
+    <script>
+        /*Icono del menú: Vamos a darle funcionalidad para hacer que se oculte o parezca según el tamaño de la ventana*/
+        $(function(){
+            //Captura del evento para mostrar u ocultar el elemento (menu)
+            $(".icon").click(function(){
+                $(".menu_item").toggle();
+            });
+            $(window).resize(function(){
+                var anchura = $(this).with();
+                if(anchura > 575){
+                    $(".menu_item").show();
+                }
+            })
+        })
+    </script>
+</body>
+</html>

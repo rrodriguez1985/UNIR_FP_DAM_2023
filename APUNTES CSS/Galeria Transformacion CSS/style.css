@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "fuente";
+    src: url(font/fuente.otf);
+}
+body{
+    /* background-color: blueviolet; */
+    background-image: url(img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "fuente";
+}
+h1{
+    font-size:50px;
+    text-align: center;
+    color:whitesmoke
+}
+  
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+ul.galeria li{
+    float:left;
+    margin:80px 10px;
+    border:3px solid whitesmoke;
+    list-style: none;
+}
+ul.galeria li a img{
+    float:left;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+}
+ul.galeria li a:hover img{
+    box-shadow: 4px 4px 10px whitesmoke;
+    transform: scale(1.5);
+}
